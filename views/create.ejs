@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Amazing Asset Gallery</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="/img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Recursive -->
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet"> 
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ 
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <form action="/assets/gallery" method="POST" enctype="multipart/form-data">
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Название элемента</label>
+                        <hr>
+                        <input type="text" class="form-control" placeholder="Введите название элемента" id="title" name="title" required>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Описание</label>
+                        <hr>
+                        <textarea rows="5" class="form-control" placeholder="Введите описание элемента" id="description" name="description"></textarea>
+                    </div>
+                </div>
+                <div class="control-group" data-toggle="buttons">
+                    <div class="form-group floating-label-form-group controls">
+                        
+                        <label>Категория</label>
+                        <hr>
+                        <input name="category" type="radio" value="accs" id="categoryChoice1" required><label for="categoryChoice1"> ACCS </label>
+                        <input name="category" type="radio" value="berd" id="categoryChoice2" required><label for="categoryChoice2"> BERD </label>
+                        <input name="category" type="radio" value="decl" id="categoryChoice3" required><label for="categoryChoice3"> DECL </label>
+                        <input name="category" type="radio" value="feet" id="categoryChoice4" required><label for="categoryChoice4"> FEET </label>
+                        <input name="category" type="radio" value="hair" id="categoryChoice5" required><label for="categoryChoice5"> HAIR </label>
+                        <input name="category" type="radio" value="hand" id="categoryChoice6" required><label for="categoryChoice6"> HAND </label>
+                        <br>
+                        <input name="category" type="radio" value="head" id="categoryChoice7" required><label for="categoryChoice7"> HEAD </label>
+                        <input name="category" type="radio" value="jbib" id="categoryChoice8" required><label for="categoryChoice8"> JBIB </label>
+                        <input name="category" type="radio" value="lowr" id="categoryChoice9" required><label for="categoryChoice9"> LOWR </label>
+                        <input name="category" type="radio" value="task" id="categoryChoice10" required><label for="categoryChoice10"> TASK </label>
+                        <input name="category" type="radio" value="teef" id="categoryChoice11" required><label for="categoryChoice11"> TEEF </label>
+                        <input name="category" type="radio" value="uppr" id="categoryChoice12" required><label for="categoryChoice12"> UPPR </label>
+                    
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>Изображение</label>
+                        <hr>
+                        <input type="file" class="form-control" id="image" name="image" required>
+                    </div>
+                </div>
+    <br>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" id="sendMessageButton">Добавить</button>
+                </div>
+                
+            </form>
+            </div>
+        </div>
+    </div>
+
+</body>

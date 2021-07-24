@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Amazing Asset Gallery</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="/img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Recursive -->
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet"> 
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ 
+</head>
+<body>
+  <%-include('layouts/navbar');-%>
+  <div class="search_box">
+    <input type="text" name="" class="input_box" placeholder="Поиск"/>
+    <a class="search-btn">
+     <i class="fa fa-search"></i>
+    </a>
+  </div>
+  
+  
+  <div class="category_container">
+  <p class="category_item" id="all">ALL</p>
+  <p class="category_item" id="accs">ACCS</p>
+  <p class="category_item" id="berd">BERD</p>
+  <p class="category_item" id="decl">DECL</p>
+  <p class="category_item" id="feet">FEET</p>
+  <p class="category_item" id="hair">HAIR</p>
+  <p class="category_item" id="hand">HAND</p>
+  <p class="category_item" id="head">HEAD</p>
+  <p class="category_item" id="jbib">JBIB</p>
+  <p class="category_item" id="lowr">LOWR</p>
+  <p class="category_item" id="task">TASK</p>
+  <p class="category_item" id="teef">TEEF</p>
+  <p class="category_item" id="uppr">UPPR</p>
+</div>
+<hr>
+
+
+<div class="row">
+  <%for(var i = 0; i<assetposts.length; i++){%>
+    <div class="col-sm-3">
+      <div class="card" style="width: 20rem; height: auto; margin: 0.5rem;">
+        <img class="card-img-top" src="<%=assetposts[i].image%>" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><%=assetposts[i].title%></h5>
+          <p class="card-text"><%=assetposts[i].description%></p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  <%}%>
+</div>
+
+
+<canvas id="canvas"></canvas>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="/js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+  <script src="/js/functionallity.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active"> 
+              <a class="nav-link" href="/home" style="border-radius: 10px;">Домой<span class="sr-only">(current)</span></a>
+            </li>
+            <% if(!loggedIn) { %>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/login" style="border-radius: 10px;">Авторизация</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/register" style="border-radius: 10px;">Регистрация</a>
+            </li>
+            <%}%>
+            <% if(loggedIn) { %>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/logout" style="border-radius: 10px;">Выйти</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="/assets/new" style="border-radius: 10px;">Новый пост</a>
+            </li>  
+            <%}%>
+          </ul>
+        </div>
+        
+    </nav>
+ 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Amazing Asset Gallery</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="/img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Recursive -->
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet"> 
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%-include('layouts/navbar');-%>
+  <div class="box">
+    <a href="/main" class="btn btn-white btn-animation-1 ">Перейти к моделям</a> 
+  </div>
+
+<div class="background-screen">
+<canvas id="canvas"></canvas>
+<div class="rightbg">
+  
+  <div class="los"><img src="/img/los.png"></div>
+  <div class="gora"><img src="/img/gora.png"></div>
+      
+  
+</div>
+</div>
+<div class="cloud">
+  <div class="cloud1"><img src="/img/cloud1.png"></div>
+  <div class="cloud2"><img src="/img/cloud2.png"></div>
+  <div class="cloud3"><img src="/img/cloud3.png"></div>
+  <div class="cloud4"><img src="/img/cloud4.png"></div>
+</div>
+
+        
+    
+  </div>
+
+  <script>
+    $(document).ready(function () {
+        $('.navbar-nav .nav-item').click(function () {
+            $('.navbar-nav .nav-item').removeClass('active');
+            $(this).addClass('active');
+        })
+    });
+</script>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="/js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+  <script  src="/js/index.js"></script>
+</body>
+</html>
